@@ -10,7 +10,6 @@ export default function Box(props) {
         imageDisplayed = "https://cdn11.bigcommerce.com/s-xa92dr7qw8/images/stencil/1280x1280/products/1489/3361/Samples_Card_and_Paper__76320.1547129756.jpg?c=2&imbypass=on"
     }
 
-    let winner = ""
     if (props.status == "tie"){
         return (
             <div className = {`box tie`}>
