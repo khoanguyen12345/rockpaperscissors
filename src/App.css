@@ -1,0 +1,81 @@
+.winner{
+  flex:0;
+  display: flex;
+  flex-flow: wrap column;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+  width:70%;
+  background-color: white;
+  border: 5px solid green;
+}
+
+.loser{
+  flex:0;
+  display: flex;
+  flex-flow: wrap column;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+  width:70%;
+  background-color: white;
+  border: 5px solid red;
+}
+
+.tie{
+  flex:0;
+  display: flex;
+  flex-flow: wrap column;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+  width:70%;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.body{
+  background-color: lightcyan;
+}
+
+h4{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h5{
+  color: lightsalmon;
+}
+
+.footer{
+  background-color: lightcyan;
+  height: 100px;
+}
+
+button{
+  flex:0;
+  display: flex;
+  flex-flow: wrap row;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  align-items: center;
+  width: 100%;
+}
