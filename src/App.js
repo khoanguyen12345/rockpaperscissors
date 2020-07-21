@@ -105,7 +105,6 @@ export default class App extends Component {
     </Row>
     </Container>
       <h5>History: {this.state.history} </h5>
-      <h5></h5>
       </div>
     </div>
     )
