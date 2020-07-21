@@ -5,27 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Col';
-
-/*function App() {
-  let [winnerPerson , setWinnerPerson] = useState(true)
-  const callHey = () =>{
-    setWinnerPerson(!winnerPerson)
-  }
-
-  return (
-    <div className = "body">
-    <Container>
-    <Row>
-    <button onClick = {()=>callHey()}></button>
-    <Col><Box user = {"You"} image = {"https://images.homedepot-static.com/productImages/94af8836-0338-4802-914e-04cc71e562ad/svn/backyard-x-scapes-fake-rocks-hdd-rof-rocsb-64_300.jpg"} status = {winnerPerson}/></Col>
-    <Col><Box user = {"Computer"} image = {"https://images-na.ssl-images-amazon.com/images/I/81TD%2B0Y9f6L._AC_SL1500_.jpg"} status = {false}/></Col>
-    </Row>
-    </Container>
-    </div>
-  );
-}
-
-export default App;*/
 export default class App extends Component {
   constructor(){
     super()
