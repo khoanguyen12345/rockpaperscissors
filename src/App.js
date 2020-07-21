@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Col';
 
-
 /*function App() {
   let [winnerPerson , setWinnerPerson] = useState(true)
   const callHey = () =>{
@@ -43,59 +42,59 @@ export default class App extends Component {
   manageInput = (userChoice) =>{
     let computerChoice = Math.floor(Math.random() * Math.floor(3)) 
     //0 is rock, 1 is paper, 2 is scissors
-    if (computerChoice == 0){
+    if (computerChoice === 0){
       this.setState({computerChoice: "rock"})
-    } else if (computerChoice == 1){
+    } else if (computerChoice === 1){
       this.setState({computerChoice: "paper"})
-    }else if (computerChoice == 2){
+    }else if (computerChoice === 2){
       this.setState({computerChoice: "scissors"})
     }
-    if (userChoice == "paper"){
+    if (userChoice === "paper"){
         this.setState({userChoice: "paper"})
-        if (computerChoice == 0){
+        if (computerChoice === 0){
           this.setState({winnerPerson: "user"})
           this.setState({userScore: this.state.userScore+1})
           this.setState({ history: [...this.state.history, 'Win '] })
-        }else if (computerChoice == 1){
+        }else if (computerChoice === 1){
           this.setState({winnerPerson: "tie"})
           this.setState({ history: [...this.state.history, 'Tie '] }) //tie (fix later plez)
-        }else if (computerChoice == 2){
+        }else if (computerChoice === 2){
           this.setState({winnerPerson: "computer"})
           this.setState({computerScore: this.state.computerScore+1})
           this.setState({ history: [...this.state.history, 'Lose '] })
         }
       }
-      if (userChoice == "rock"){
+      if (userChoice === "rock"){
         this.setState({userChoice: "rock"})
-        if (computerChoice == 0){
+        if (computerChoice === 0){
           this.setState({winnerPerson: "tie"})
           this.setState({ history: [...this.state.history, 'Tie '] }) //tie (fix later plez)
-        }else if (computerChoice == 1){
+        }else if (computerChoice === 1){
           this.setState({winnerPerson: "computer"})
           this.setState({computerScore: this.state.computerScore+1})
           this.setState({ history: [...this.state.history, 'Lose '] })
-        }else if (computerChoice == 2){
+        }else if (computerChoice === 2){
           this.setState({winnerPerson: "user"})
           this.setState({userScore: this.state.userScore+1})
           this.setState({ history: [...this.state.history, 'Win '] })
         }
       }
-      if (userChoice == "scissors"){
+      if (userChoice === "scissors"){
         this.setState({userChoice: "scissors"})
-        if (computerChoice == 0){
+        if (computerChoice === 0){
           this.setState({winnerPerson: "computer"})
           this.setState({computerScore: this.state.computerScore+1})
           this.setState({ history: [...this.state.history, 'Lose '] })
-        }else if (computerChoice == 1){
+        }else if (computerChoice === 1){
           this.setState({winnerPerson: "user"})
           this.setState({userScore: this.state.userScore+1})
           this.setState({ history: [...this.state.history, 'Win '] })
-        }else if (computerChoice == 2){
+        }else if (computerChoice === 2){
           this.setState({winnerPerson: "tie"})
           this.setState({ history: [...this.state.history, 'Tie '] }) //tie (fix later plez)
         }
       }
-      if (userChoice == "clear"){
+      if (userChoice === "clear"){
         this.setState({history: []})
         this.setState({userScore: 0})
         this.setState({computerScore:0})
